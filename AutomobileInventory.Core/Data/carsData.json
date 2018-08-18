@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Manufacturer": null,
+    "Make": "Accord",
+    "Model": "EX-L",
+    "Year": 2018
+  },
+  {
+    "Id": 2,
+    "Manufacturer": "Nissan",
+    "Make": "Maxima",
+    "Model": "L",
+    "Year": 2019
+  }
+]

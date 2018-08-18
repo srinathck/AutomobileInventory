@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileInventory.Web", "AutomobileInventory.Web\AutomobileInventory.Web.csproj", "{74F11A14-5E04-442F-9F37-DEB60721F39F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomobileInventory.Web", "AutomobileInventory.Web\AutomobileInventory.Web.csproj", "{74F11A14-5E04-442F-9F37-DEB60721F39F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileInventory.Core", "AutomobileInventory.Core\AutomobileInventory.Core.csproj", "{4DD52F4F-29C2-4BFC-9330-F774BCD0596D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DF184818-836C-481E-95A5-09503FCB0D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileInventory.Core.Test", "AutomobileInventory.Core.Test\AutomobileInventory.Core.Test.csproj", "{BDA73A22-F930-42E4-9E7F-94DE94039927}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,20 @@ Global
 		{74F11A14-5E04-442F-9F37-DEB60721F39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74F11A14-5E04-442F-9F37-DEB60721F39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74F11A14-5E04-442F-9F37-DEB60721F39F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD52F4F-29C2-4BFC-9330-F774BCD0596D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD52F4F-29C2-4BFC-9330-F774BCD0596D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD52F4F-29C2-4BFC-9330-F774BCD0596D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD52F4F-29C2-4BFC-9330-F774BCD0596D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA73A22-F930-42E4-9E7F-94DE94039927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA73A22-F930-42E4-9E7F-94DE94039927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA73A22-F930-42E4-9E7F-94DE94039927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA73A22-F930-42E4-9E7F-94DE94039927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDA73A22-F930-42E4-9E7F-94DE94039927} = {DF184818-836C-481E-95A5-09503FCB0D2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF244A4F-5AEF-4188-B847-9A07734C983D}

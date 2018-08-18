@@ -21,6 +21,9 @@ namespace AutomobileInventory.Web
         {
             services.AddMvc();
 
+            //Add WebApi Conventions
+            services.AddMvc().AddWebApiConventions();
+
             //SPA App
 
             services.AddSpaStaticFiles(configuration =>
