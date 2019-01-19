@@ -9,7 +9,7 @@ namespace AutomobileInventory.Core
 {
     public class CarsRepository
     {
-        private static string path = @"C:\Users\Srinath\source\repos\AutomobileInventory\AutomobileInventory.Core\Data\carsData.json";
+        private static string path = @"..\AutomobileInventory.Core\Data\carsData.json";
         private string json = File.ReadAllText(path);
 
         public bool AddCar(Car car)
