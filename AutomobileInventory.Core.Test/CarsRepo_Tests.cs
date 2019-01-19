@@ -10,7 +10,7 @@ namespace AutomobileInventory.Core.Test
         public void GetCars_Test()
         {
             //Arrange
-            CarsRepository repo = new CarsRepository();
+            CarsRepository repo = new CarsRepository(@"..\..\..\carsData.json");
 
             //Act
             var cars = repo.GetCars();
@@ -23,7 +23,7 @@ namespace AutomobileInventory.Core.Test
         public void GetCar_Test()
         {
             //Arrange
-            CarsRepository repo = new CarsRepository();
+            CarsRepository repo = new CarsRepository(@"..\..\..\carsData.json");
 
             //Act
             var cars = repo.GetCar(2);
@@ -36,7 +36,7 @@ namespace AutomobileInventory.Core.Test
         public void AddCars_Test()
         {
             //Arrange
-            CarsRepository repo = new CarsRepository();
+            CarsRepository repo = new CarsRepository(null);
             Car car = new Car { Id = 2, Make = "Murano", Model = "SL", Year = 2014, Manufacturer = "Nissan" };
 
             //Act
@@ -51,7 +51,7 @@ namespace AutomobileInventory.Core.Test
         public void DeleteCar_Test()
         {
             //Arrange
-            CarsRepository repo = new CarsRepository();
+            CarsRepository repo = new CarsRepository(null);
             Car car = new Car { Id = 2, Make = "Murano", Model = "SL", Year = 2014, Manufacturer = "Nissan" };
 
             //Act
@@ -66,7 +66,7 @@ namespace AutomobileInventory.Core.Test
         public void UpdateCar_Test()
         {
             //Arrange
-            CarsRepository repo = new CarsRepository();
+            CarsRepository repo = new CarsRepository(null);
             Car car = new Car { Id = 2, Make = "Maxima", Model = "L", Year = 2019, Manufacturer = "Nissan" };
 
             //Act

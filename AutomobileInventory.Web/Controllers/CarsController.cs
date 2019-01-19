@@ -9,7 +9,7 @@ namespace AutomobileInventory.Web.Controllers
     [Route("api/[controller]")]
     public class CarsController : Controller
     {
-        private CarsRepository repo = new CarsRepository();
+        private CarsRepository repo = new CarsRepository(null);
         // GET api/values
         [HttpGet]
         public IEnumerable<Car> Get()

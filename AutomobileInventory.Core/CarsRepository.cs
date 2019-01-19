@@ -9,8 +9,20 @@ namespace AutomobileInventory.Core
 {
     public class CarsRepository
     {
-        private static string path = @"..\AutomobileInventory.Core\Data\carsData.json";
-        private string json = File.ReadAllText(path);
+        private static string path;
+        private string json;
+        public CarsRepository(string path1)
+        {
+            if (path1 == null)
+            {
+                path = @"..\AutomobileInventory.Core\Data\carsData.json";
+            }
+            else
+            {
+                path = path1;
+            }
+            json = File.ReadAllText(path);
+        }
 
         public bool AddCar(Car car)
         {
