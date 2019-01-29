@@ -29,7 +29,7 @@ namespace AutomobileInventory.Core.Test
             var cars = repo.GetCar(2);
 
             //Assert
-            Assert.IsNotNull(cars);
+            Assert.IsNull(cars);
         }
 
         [TestMethod, Ignore]
